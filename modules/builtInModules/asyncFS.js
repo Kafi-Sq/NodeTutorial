@@ -1,5 +1,7 @@
 const { readFile, writeFile } = require('fs')
 
+console.log('Start')
+// Call backs and call back hell
 readFile('./modules/builtInModules/content/first.txt', 'utf-8', (err, result) => {
     if (err) {
         console.log(err)
@@ -19,8 +21,9 @@ readFile('./modules/builtInModules/content/first.txt', 'utf-8', (err, result) =>
                     console.log(err)
                     return
                 }
-                console.log(result)
+                console.log('Done')
             }
         )
     })
 })
+console.log('Starting next')
