@@ -2,6 +2,9 @@
 // Modules - Encapsulated Code 
 const names = require('../modules/names')
 const sayHi = require('../modules/utils')
+const data = require('../modules/alternative')
+require('../modules/noExport')
+console.log(data)
 
 sayHi('Susan')
 sayHi(names.john)
